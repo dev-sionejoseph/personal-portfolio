@@ -58,7 +58,6 @@
     height: 8%;
     max-height: 10%;
     background-color: antiquewhite;
-    border: solid;
     display: flex;
     border-radius: 10px;
     align-items: center;
@@ -69,7 +68,6 @@
     width: 94%;
     height: 40%;
     background-color: aqua;
-    border: solid;
     overflow: hidden;
     /* background-image: url(./assets/cardimage.JPG); */
  }
@@ -80,9 +78,14 @@
 }
 
 .card-details{
-    background-color: black;
+    background-color: antiquewhite;
     width: 94%;
     height: 40%;
+}
+
+.card-details,.card-title, .card-subtitle, .card-photo {
+    border: solid;
+    box-sizing: border-box;
 }
 
  
