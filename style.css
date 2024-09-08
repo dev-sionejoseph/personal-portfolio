@@ -7,6 +7,7 @@
     flex-direction: column;
     align-items: center;
     width: 100vw;
+    max-width: 100vw;
  }
 
  nav{
@@ -17,6 +18,7 @@
     align-items: center;
     width: 100%;
     max-width: 100vw;
+    height: 15vh;
     box-sizing: border-box;
  }
 
@@ -25,10 +27,6 @@
     width: 25%;
     justify-content: space-between;
  }
-
- /* #rightNAVbtn{
-    justify-content: space-between;
- } */
 
  .navBTN {
     width: 40%;
@@ -39,3 +37,52 @@
     justify-content: center;
     width: 50%;
  }
+
+ .cardbase{
+    background-color: cadetblue;
+    background-image: url(./assets/782752-gorgerous-purple-background-wallpaper-1080x1920.jpg);
+    border-radius: 3px;
+    border: solid;
+    width: 20%;
+    height: 80vh;
+    /* min-height: 80vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5vh;
+ }
+
+ .card-title, .card-subtitle {
+    width: 95%;
+    height: 8%;
+    max-height: 10%;
+    background-color: antiquewhite;
+    border: solid;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    font-size: 12px;
+ }
+
+ .card-photo{
+    width: 94%;
+    height: 40%;
+    background-color: aqua;
+    border: solid;
+    overflow: hidden;
+    /* background-image: url(./assets/cardimage.JPG); */
+ }
+
+.card-photo img{
+    width: 100%;
+    object-fit: contain;
+}
+
+.card-details{
+    background-color: black;
+    width: 94%;
+    height: 40%;
+}
+
+ 
