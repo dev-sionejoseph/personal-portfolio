@@ -11,7 +11,9 @@
  }
 
  nav{
-    background-color: burlywood;
+    background-color: rgb(122, 75, 13);
+    background-image: url(./assets/brown-leather.jpg);
+    background-blend-mode:luminosity;
     padding: 10px 10px;
     display: flex;
     justify-content: space-between;
@@ -38,11 +40,20 @@
     width: 50%;
  }
 
+ .main-wrap{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.25vh;
+ }
+
  .cardbase{
     background-color: cadetblue;
     background-image: url(./assets/782752-gorgerous-purple-background-wallpaper-1080x1920.jpg);
+    background-position: center;
     border-radius: 3px;
-    border: solid;
+    border: 6px solid;
     width: 20%;
     height: 80vh;
     /* min-height: 80vh; */
@@ -50,23 +61,47 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 2.5vh;
+ }
+
+ .cardback{
+    border-radius: 3px;
+    border: 6px solid;
+    width: 20%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./assets/cardback.png);
+    background-position: center;
+ }
+
+ .underlay{
+    width: 95%;
+    height: 95%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    border-radius: 6px;
  }
 
  .card-title, .card-subtitle {
-    width: 95%;
+    width: 100%;
     height: 8%;
     max-height: 10%;
     background-color: antiquewhite;
     display: flex;
-    border-radius: 10px;
+    border-radius: 6px;
     align-items: center;
     font-size: 12px;
+    padding-left: 4%;
  }
 
  .card-photo{
-    width: 94%;
-    height: 40%;
+    width: 99%;
+    height: 42%;
     background-color: aqua;
     overflow: hidden;
     /* background-image: url(./assets/cardimage.JPG); */
@@ -79,8 +114,8 @@
 
 .card-details{
     background-color: antiquewhite;
-    width: 94%;
-    height: 40%;
+    width: 99%;
+    height: 42%;
 }
 
 .card-details,.card-title, .card-subtitle, .card-photo {
@@ -88,4 +123,15 @@
     box-sizing: border-box;
 }
 
+.card-details-full{
+    height: 92%;
+    width: 99%;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    align-items: center;
+    border: solid;
+    box-sizing: border-box;
+}
  
